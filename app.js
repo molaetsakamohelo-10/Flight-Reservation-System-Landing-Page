@@ -6,7 +6,7 @@ const qrContainer = document.getElementById("qrcode");
 
 if (qrContainer && window.QRCode) {
     new QRCode(qrContainer, {
-        text: window.location.href,
+        text: https://molaetsakamohelo-10.github.io/Flight-Reservation-System/,
         width: 180,
         height: 180,
         colorDark: "#183d58",
