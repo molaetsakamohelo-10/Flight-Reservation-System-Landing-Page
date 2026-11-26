@@ -591,4 +591,21 @@ body.dark .about-text p {
         border-color: #16B8A6;
         transform: translateY(-2px);   
     }
+    #qrcode{
+        display: flex;
+        justify-content: center;
+        align-items: cenetr;
+        margin: 20px auto;
+        width: fit content;
+    }
+    #qrcode img
+    #qrcode canvas{
+        display: block;
+        margin: 0 auto;
+    }
+    .website-link{
+        display: block;
+        width: fit-content;
+        margin: 15px auto;
+    }
 }
