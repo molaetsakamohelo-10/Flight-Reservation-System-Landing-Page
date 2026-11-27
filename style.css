@@ -608,4 +608,125 @@ body.dark .about-text p {
         width: fit-content;
         margin: 15px auto;
     }
+
+    .contact-section {
+    padding: 60px 20px;
+    background: var(--bg);
+}
+
+.contact-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contact-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-heading h1 {
+    margin: 12px 0;
+}
+
+.contact-heading p {
+    color: var(--muted);
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.contact-info,
+.contact-form {
+    background: var(--surface);
+    padding: 30px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.contact-info h2,
+.contact-form h2 {
+    margin-bottom: 18px;
+}
+
+.contact-info > p {
+    color: var(--muted);
+    margin-bottom: 25px;
+}
+
+.contact-item {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+}
+
+.contact-item strong {
+    color: var(--accent);
+}
+
+.contact-item p {
+    margin-top: 5px;
+    color: var(--muted);
+}
+
+.contact-form {
+    display: grid;
+    gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1.5px solid var(--line);
+    border-radius: var(--radius-sm);
+    background: var(--surface);
+    color: var(--ink);
+    font: inherit;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid var(--accent);
+    border-color: var(--accent);
+}
+
+.contact-form label {
+    font-weight: 700;
+}
+
+.contact-form button {
+    margin-top: 10px;
+}
+
+#formMessage {
+    color: var(--good);
+    font-weight: 700;
+}
+
+/* Mobile responsiveness */
+
+@media (max-width: 750px) {
+
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 22px;
+    }
+
+}
 }
