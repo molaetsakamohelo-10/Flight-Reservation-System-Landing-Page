@@ -614,48 +614,69 @@ body.dark .about-text p {
     background: var(--bg);
 }
 
-.contact-container {
-    max-width: 1100px;
-    margin: auto;
+/* =================================
+   MERIDIAN AIR - CONTACT US
+================================= */
+
+.contact-section {
+    width: 100%;
+    padding: 45px 20px 65px;
+    background: var(--bg);
 }
 
+.contact-container {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: grid;
+    gap: 28px;
+}
+
+/* Heading */
+
 .contact-heading {
-    text-align: center;
-    margin-bottom: 40px;
+    display: grid;
+    gap: 10px;
 }
 
 .contact-heading h1 {
-    margin: 12px 0;
+    font: 600 clamp(30px, 5vw, 44px)/1.15 var(--font-display);
+    color: var(--ink);
 }
 
 .contact-heading p {
     color: var(--muted);
+    max-width: 650px;
 }
+
+/* Main layout */
 
 .contact-content {
     display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
-    gap: 25px;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 22px;
     align-items: start;
 }
+
+/* Contact information */
 
 .contact-info,
 .contact-form {
     background: var(--surface);
-    padding: 30px;
     border: 1px solid var(--line);
     border-radius: var(--radius);
+    padding: 26px;
     box-shadow: var(--shadow);
 }
 
 .contact-info h2,
 .contact-form h2 {
-    margin-bottom: 18px;
+    font: 600 22px/1.2 var(--font-display);
+    margin-bottom: 12px;
 }
 
 .contact-info > p {
     color: var(--muted);
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .contact-item {
@@ -668,17 +689,25 @@ body.dark .about-text p {
 }
 
 .contact-item strong {
+    display: block;
     color: var(--accent);
+    margin-bottom: 5px;
 }
 
 .contact-item p {
-    margin-top: 5px;
     color: var(--muted);
 }
+
+/* Contact form */
 
 .contact-form {
     display: grid;
     gap: 12px;
+}
+
+.contact-form label {
+    font-weight: 700;
+    font-size: 15px;
 }
 
 .contact-form input,
@@ -692,30 +721,36 @@ body.dark .about-text p {
     font: inherit;
 }
 
+.contact-form input {
+    height: 52px;
+}
+
 .contact-form textarea {
     resize: vertical;
+    min-height: 130px;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    outline: 2px solid var(--accent);
+    outline: 3px solid var(--focus);
+    outline-offset: 2px;
     border-color: var(--accent);
 }
 
-.contact-form label {
-    font-weight: 700;
+.contact-form button {
+    width: fit-content;
+    margin-top: 8px;
 }
 
-.contact-form button {
-    margin-top: 10px;
-}
+/* Success message */
 
 #formMessage {
     color: var(--good);
     font-weight: 700;
+    min-height: 1.4em;
 }
 
-/* Mobile responsiveness */
+/* Responsive design */
 
 @media (max-width: 750px) {
 
@@ -726,6 +761,18 @@ body.dark .about-text p {
     .contact-info,
     .contact-form {
         padding: 22px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .contact-section {
+        padding: 30px 16px 45px;
+    }
+
+    .contact-form button {
+        width: 100%;
     }
 
 }
