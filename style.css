@@ -776,4 +776,15 @@ body.dark .about-text p {
     }
 
 }
+
+
+.contact-section {
+    border: 1.5px solid var(--line);
+    border-radius: var(--radius);
+    margin: 25px auto;
+    max-width: 1160px;
+    padding: 35px 25px;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+}
 }
